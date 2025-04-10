@@ -1,0 +1,710 @@
+
+=========================================
+Test: Test 1
+Описание: Проверка, когда маленькое число теряется из-за большого.
+Входные данные (2 элементов): 
+Результаты теста:
+Original Kahan sum:     -9999.87654321090123499260471362504176795482635498046875
+High precision sum:     -9999.87654321090123456790239387173557794596945313969627
+Absolute error:         4.24702e-16
+Matching digits:        21
+
+Original Klein sum:     -9999.87654321090123499260471362504176795482635498046875
+High precision sum:     -9999.87654321090123456790239387173557794596945313969627
+Absolute error:         4.24702e-16
+Matching digits:        21
+shuffle with Kahan Sum
+
+Run #1 (shuffled):
+Calculated sum:         -9999.87654321090123499260471362504176795482635498046875
+Difference from exact:  4.24702e-16
+Matching digits:        21
+
+Run #2 (shuffled):
+Calculated sum:         -9999.87654321090123499260471362504176795482635498046875
+Difference from exact:  4.24702e-16
+Matching digits:        21
+
+Run #3 (shuffled):
+Calculated sum:         -9999.87654321090123499260471362504176795482635498046875
+Difference from exact:  4.24702e-16
+Matching digits:        21
+
+Run #4 (shuffled):
+Calculated sum:         -9999.87654321090123499260471362504176795482635498046875
+Difference from exact:  4.24702e-16
+Matching digits:        21
+
+Run #5 (shuffled):
+Calculated sum:         -9999.87654321090123499260471362504176795482635498046875
+Difference from exact:  4.24702e-16
+Matching digits:        21
+
+shuffle with BabushkaKlein Sum
+
+Run #1 (shuffled):
+Calculated sum:         -9999.87654321090123499260471362504176795482635498046875
+Difference from exact:  4.24702e-16
+Matching digits:        21
+
+Run #2 (shuffled):
+Calculated sum:         -9999.87654321090123499260471362504176795482635498046875
+Difference from exact:  4.24702e-16
+Matching digits:        21
+
+Run #3 (shuffled):
+Calculated sum:         -9999.87654321090123499260471362504176795482635498046875
+Difference from exact:  4.24702e-16
+Matching digits:        21
+
+Run #4 (shuffled):
+Calculated sum:         -9999.87654321090123499260471362504176795482635498046875
+Difference from exact:  4.24702e-16
+Matching digits:        21
+
+Run #5 (shuffled):
+Calculated sum:         -9999.87654321090123499260471362504176795482635498046875
+Difference from exact:  4.24702e-16
+Matching digits:        21
+
+
+=========================================
+
+=========================================
+Test: Test 2
+Описание: Проверка суммирования чисел, отличающихся на несколько порядков (1e6 и 1e-8).
+Входные данные (2 элементов): 
+Результаты теста:
+Original Kahan sum:     1000000.00000001000000793283106759190559387207031250000000
+High precision sum:     1000000.00000001000000000000000000000707446218885976918934
+Absolute error:         7.93283e-15
+Matching digits:        22
+
+Original Klein sum:     1000000.00000001000000793283106759190559387207031250000000
+High precision sum:     1000000.00000001000000000000000000000707446218885976918934
+Absolute error:         7.93283e-15
+Matching digits:        22
+shuffle with Kahan Sum
+
+Run #1 (shuffled):
+Calculated sum:         1000000.00000001000000793283106759190559387207031250000000
+Difference from exact:  7.93283e-15
+Matching digits:        22
+
+Run #2 (shuffled):
+Calculated sum:         1000000.00000001000000793283106759190559387207031250000000
+Difference from exact:  7.93283e-15
+Matching digits:        22
+
+Run #3 (shuffled):
+Calculated sum:         1000000.00000001000000793283106759190559387207031250000000
+Difference from exact:  7.93283e-15
+Matching digits:        22
+
+Run #4 (shuffled):
+Calculated sum:         1000000.00000001000000793283106759190559387207031250000000
+Difference from exact:  7.93283e-15
+Matching digits:        22
+
+Run #5 (shuffled):
+Calculated sum:         1000000.00000001000000793283106759190559387207031250000000
+Difference from exact:  7.93283e-15
+Matching digits:        22
+
+shuffle with BabushkaKlein Sum
+
+Run #1 (shuffled):
+Calculated sum:         1000000.00000001000000793283106759190559387207031250000000
+Difference from exact:  7.93283e-15
+Matching digits:        22
+
+Run #2 (shuffled):
+Calculated sum:         1000000.00000001000000793283106759190559387207031250000000
+Difference from exact:  7.93283e-15
+Matching digits:        22
+
+Run #3 (shuffled):
+Calculated sum:         1000000.00000001000000793283106759190559387207031250000000
+Difference from exact:  7.93283e-15
+Matching digits:        22
+
+Run #4 (shuffled):
+Calculated sum:         1000000.00000001000000793283106759190559387207031250000000
+Difference from exact:  7.93283e-15
+Matching digits:        22
+
+Run #5 (shuffled):
+Calculated sum:         1000000.00000001000000793283106759190559387207031250000000
+Difference from exact:  7.93283e-15
+Matching digits:        22
+
+
+=========================================
+
+=========================================
+Test: Test 3
+Описание: Проверка поглощения малого числа (1e-20) при суммировании с большими (1e20).
+Входные данные (4 элементов): 
+Результаты теста:
+Original Kahan sum:     0.50000000000000000000000000000000000000000000000000
+High precision sum:     0.50000000000000000001000000000000000000034163958225
+Absolute error:         1e-20
+Matching digits:        21
+
+Original Klein sum:     0.50000000000000000000000000000000000000000000000000
+High precision sum:     0.50000000000000000001000000000000000000034163958225
+Absolute error:         1e-20
+Matching digits:        21
+shuffle with Kahan Sum
+
+Run #1 (shuffled):
+Calculated sum:         0.00000000000000000001000000000000000000034163958225
+Difference from exact:  0.5
+Matching digits:        2
+
+Run #2 (shuffled):
+Calculated sum:         0.00000000000000000000000000000000000000000000000000
+Difference from exact:  0.5
+Matching digits:        2
+
+Run #3 (shuffled):
+Calculated sum:         0.00000000000000000000000000000000000000000000000000
+Difference from exact:  0.5
+Matching digits:        2
+
+Run #4 (shuffled):
+Calculated sum:         0.00000000000000000000000000000000000000000000000000
+Difference from exact:  0.5
+Matching digits:        2
+
+Run #5 (shuffled):
+Calculated sum:         0.50000000000000000000000000000000000000000000000000
+Difference from exact:  1e-20
+Matching digits:        21
+
+shuffle with BabushkaKlein Sum
+
+Run #1 (shuffled):
+Calculated sum:         0.50000000000000000000000000000000000000000000000000
+Difference from exact:  1e-20
+Matching digits:        21
+
+Run #2 (shuffled):
+Calculated sum:         0.50000000000000000000000000000000000000000000000000
+Difference from exact:  1e-20
+Matching digits:        21
+
+Run #3 (shuffled):
+Calculated sum:         0.50000000000000000000000000000000000000000000000000
+Difference from exact:  1e-20
+Matching digits:        21
+
+Run #4 (shuffled):
+Calculated sum:         0.50000000000000000000000000000000000000000000000000
+Difference from exact:  1e-20
+Matching digits:        21
+
+Run #5 (shuffled):
+Calculated sum:         0.50000000000000000000000000000000000000000000000000
+Difference from exact:  1e-20
+Matching digits:        21
+
+
+=========================================
+
+=========================================
+Test: Test 4
+Описание: Проверка точности вычитания больших чисел с противоположными знаками.
+Входные данные (4 элементов): 
+Результаты теста:
+Original Kahan sum:     0.00000000000000000000000000000000000000000000000000
+High precision sum:     0.00000000000000000000000000000000000000000000000000
+Absolute error:         0
+Matching digits:        52
+
+Original Klein sum:     0.00000000000000000000000000000000000000000000000000
+High precision sum:     0.00000000000000000000000000000000000000000000000000
+Absolute error:         0
+Matching digits:        52
+shuffle with Kahan Sum
+
+Run #1 (shuffled):
+Calculated sum:         0.00000000000000000000000000000000000000000000000000
+Difference from exact:  0
+Matching digits:        52
+
+Run #2 (shuffled):
+Calculated sum:         0.00000000000000000000000000000000000000000000000000
+Difference from exact:  0
+Matching digits:        52
+
+Run #3 (shuffled):
+Calculated sum:         0.00000000000000000000000000000000000000000000000000
+Difference from exact:  0
+Matching digits:        52
+
+Run #4 (shuffled):
+Calculated sum:         0.00000000038951635360717768328832536872501079994180
+Difference from exact:  3.89516e-10
+Matching digits:        11
+
+Run #5 (shuffled):
+Calculated sum:         0.00000000000000000000000000000000000000000000000000
+Difference from exact:  0
+Matching digits:        52
+
+shuffle with BabushkaKlein Sum
+
+Run #1 (shuffled):
+Calculated sum:         0.00000000000000000000000000000000000000000000000000
+Difference from exact:  0
+Matching digits:        52
+
+Run #2 (shuffled):
+Calculated sum:         0.00000000000000000000000000000000000000000000000000
+Difference from exact:  0
+Matching digits:        52
+
+Run #3 (shuffled):
+Calculated sum:         0.00000000000000000000000000000000000000000000000000
+Difference from exact:  0
+Matching digits:        52
+
+Run #4 (shuffled):
+Calculated sum:         0.00000000000000000000000000000000000000000000000000
+Difference from exact:  0
+Matching digits:        52
+
+Run #5 (shuffled):
+Calculated sum:         0.00000000000000000000000000000000000000000000000000
+Difference from exact:  0
+Matching digits:        52
+
+
+=========================================
+
+=========================================
+Test: Test 5
+Описание: Проверка накопления ошибок при повторном суммировании 0.1 (100000 элементов).
+Входные данные (100000 элементов): 
+Результаты теста:
+Original Kahan sum:     10000.00000000000000000000000000000000000000000000000000
+High precision sum:     10000.00000000000000013552527156068805425093160010874271
+Absolute error:         1.35525e-16
+Matching digits:        21
+
+Original Klein sum:     10000.00000000000000000000000000000000000000000000000000
+High precision sum:     10000.00000000000000013552527156068805425093160010874271
+Absolute error:         1.35525e-16
+Matching digits:        21
+shuffle with Kahan Sum
+
+Run #1 (shuffled):
+Calculated sum:         10000.00000000000000000000000000000000000000000000000000
+Difference from exact:  1.35525e-16
+Matching digits:        21
+
+Run #2 (shuffled):
+Calculated sum:         10000.00000000000000000000000000000000000000000000000000
+Difference from exact:  1.35525e-16
+Matching digits:        21
+
+Run #3 (shuffled):
+Calculated sum:         10000.00000000000000000000000000000000000000000000000000
+Difference from exact:  1.35525e-16
+Matching digits:        21
+
+Run #4 (shuffled):
+Calculated sum:         10000.00000000000000000000000000000000000000000000000000
+Difference from exact:  1.35525e-16
+Matching digits:        21
+
+Run #5 (shuffled):
+Calculated sum:         10000.00000000000000000000000000000000000000000000000000
+Difference from exact:  1.35525e-16
+Matching digits:        21
+
+shuffle with BabushkaKlein Sum
+
+Run #1 (shuffled):
+Calculated sum:         10000.00000000000000000000000000000000000000000000000000
+Difference from exact:  1.35525e-16
+Matching digits:        21
+
+Run #2 (shuffled):
+Calculated sum:         10000.00000000000000000000000000000000000000000000000000
+Difference from exact:  1.35525e-16
+Matching digits:        21
+
+Run #3 (shuffled):
+Calculated sum:         10000.00000000000000000000000000000000000000000000000000
+Difference from exact:  1.35525e-16
+Matching digits:        21
+
+Run #4 (shuffled):
+Calculated sum:         10000.00000000000000000000000000000000000000000000000000
+Difference from exact:  1.35525e-16
+Matching digits:        21
+
+Run #5 (shuffled):
+Calculated sum:         10000.00000000000000000000000000000000000000000000000000
+Difference from exact:  1.35525e-16
+Matching digits:        21
+
+
+=========================================
+
+=========================================
+Test: Test 6
+Описание: Проверка чувствительности порядка суммирования: множество маленьких чисел и один большой в конце.
+Входные данные (100001 элементов): 
+Результаты теста:
+Original Kahan sum:     1.00001000000000000002622901895676932326750829815865
+High precision sum:     1.00001000000000000000000018377930495836641360156492
+Absolute error:         2.62288e-20
+Matching digits:        21
+
+Original Klein sum:     1.00001000000000000002622901895676932326750829815865
+High precision sum:     1.00001000000000000000000018377930495836641360156492
+Absolute error:         2.62288e-20
+Matching digits:        21
+shuffle with Kahan Sum
+
+Run #1 (shuffled):
+Calculated sum:         1.00001000000000000002622901895676932326750829815865
+Difference from exact:  2.62288e-20
+Matching digits:        21
+
+Run #2 (shuffled):
+Calculated sum:         1.00001000000000000002622901895676932326750829815865
+Difference from exact:  2.62288e-20
+Matching digits:        21
+
+Run #3 (shuffled):
+Calculated sum:         1.00001000000000000002622901895676932326750829815865
+Difference from exact:  2.62288e-20
+Matching digits:        21
+
+Run #4 (shuffled):
+Calculated sum:         1.00001000000000000002622901895676932326750829815865
+Difference from exact:  2.62288e-20
+Matching digits:        21
+
+Run #5 (shuffled):
+Calculated sum:         1.00001000000000000002622901895676932326750829815865
+Difference from exact:  2.62288e-20
+Matching digits:        21
+
+shuffle with BabushkaKlein Sum
+
+Run #1 (shuffled):
+Calculated sum:         1.00001000000000000002622901895676932326750829815865
+Difference from exact:  2.62288e-20
+Matching digits:        21
+
+Run #2 (shuffled):
+Calculated sum:         1.00001000000000000002622901895676932326750829815865
+Difference from exact:  2.62288e-20
+Matching digits:        21
+
+Run #3 (shuffled):
+Calculated sum:         1.00001000000000000002622901895676932326750829815865
+Difference from exact:  2.62288e-20
+Matching digits:        21
+
+Run #4 (shuffled):
+Calculated sum:         1.00001000000000000002622901895676932326750829815865
+Difference from exact:  2.62288e-20
+Matching digits:        21
+
+Run #5 (shuffled):
+Calculated sum:         1.00001000000000000002622901895676932326750829815865
+Difference from exact:  2.62288e-20
+Matching digits:        21
+
+
+=========================================
+
+=========================================
+Test: Test 7
+Описание: Проверка влияния порядка: множество чисел 1e-8 с одним большим элементом (1.0) в конце.
+Входные данные (10001 элементов): 
+Результаты теста:
+Original Kahan sum:     1.00010000000000000004544975507059234587359242141247
+High precision sum:     1.00010000000000000000000007074462188859769189337723
+Absolute error:         4.54497e-20
+Matching digits:        21
+
+Original Klein sum:     1.00010000000000000004544975507059234587359242141247
+High precision sum:     1.00010000000000000000000007074462188859769189337723
+Absolute error:         4.54497e-20
+Matching digits:        21
+shuffle with Kahan Sum
+
+Run #1 (shuffled):
+Calculated sum:         1.00010000000000000004544975507059234587359242141247
+Difference from exact:  4.54497e-20
+Matching digits:        21
+
+Run #2 (shuffled):
+Calculated sum:         1.00010000000000000004544975507059234587359242141247
+Difference from exact:  4.54497e-20
+Matching digits:        21
+
+Run #3 (shuffled):
+Calculated sum:         1.00010000000000000004544975507059234587359242141247
+Difference from exact:  4.54497e-20
+Matching digits:        21
+
+Run #4 (shuffled):
+Calculated sum:         1.00010000000000000004544975507059234587359242141247
+Difference from exact:  4.54497e-20
+Matching digits:        21
+
+Run #5 (shuffled):
+Calculated sum:         1.00010000000000000004544975507059234587359242141247
+Difference from exact:  4.54497e-20
+Matching digits:        21
+
+shuffle with BabushkaKlein Sum
+
+Run #1 (shuffled):
+Calculated sum:         1.00010000000000000004544975507059234587359242141247
+Difference from exact:  4.54497e-20
+Matching digits:        21
+
+Run #2 (shuffled):
+Calculated sum:         1.00010000000000000004544975507059234587359242141247
+Difference from exact:  4.54497e-20
+Matching digits:        21
+
+Run #3 (shuffled):
+Calculated sum:         1.00010000000000000004544975507059234587359242141247
+Difference from exact:  4.54497e-20
+Matching digits:        21
+
+Run #4 (shuffled):
+Calculated sum:         1.00010000000000000004544975507059234587359242141247
+Difference from exact:  4.54497e-20
+Matching digits:        21
+
+Run #5 (shuffled):
+Calculated sum:         1.00010000000000000004544975507059234587359242141247
+Difference from exact:  4.54497e-20
+Matching digits:        21
+
+
+=========================================
+
+=========================================
+Test: Test 8
+Описание: Проверка влияния порядка суммирования при суммировании ряда 1/i (убывающая последовательность).
+Входные данные (1000000 элементов): 
+Результаты теста:
+Original Kahan sum:     14.39272672286572363111595285189991955121513456106186
+High precision sum:     14.39272672286572363139895139858416472970975910627978
+Absolute error:         2.82999e-19
+Matching digits:        21
+
+Original Klein sum:     14.39272672286572363111595285189991955121513456106186
+High precision sum:     14.39272672286572363139895139858416472970975910627978
+Absolute error:         2.82999e-19
+Matching digits:        21
+shuffle with Kahan Sum
+
+Run #1 (shuffled):
+Calculated sum:         14.39272672286572363111595285189991955121513456106186
+Difference from exact:  2.82999e-19
+Matching digits:        21
+
+Run #2 (shuffled):
+Calculated sum:         14.39272672286572363111595285189991955121513456106186
+Difference from exact:  2.82999e-19
+Matching digits:        21
+
+Run #3 (shuffled):
+Calculated sum:         14.39272672286572363111595285189991955121513456106186
+Difference from exact:  2.82999e-19
+Matching digits:        21
+
+Run #4 (shuffled):
+Calculated sum:         14.39272672286572363111595285189991955121513456106186
+Difference from exact:  2.82999e-19
+Matching digits:        21
+
+Run #5 (shuffled):
+Calculated sum:         14.39272672286572363111595285189991955121513456106186
+Difference from exact:  2.82999e-19
+Matching digits:        21
+
+shuffle with BabushkaKlein Sum
+
+Run #1 (shuffled):
+Calculated sum:         14.39272672286572363111595285189991955121513456106186
+Difference from exact:  2.82999e-19
+Matching digits:        21
+
+Run #2 (shuffled):
+Calculated sum:         14.39272672286572363111595285189991955121513456106186
+Difference from exact:  2.82999e-19
+Matching digits:        21
+
+Run #3 (shuffled):
+Calculated sum:         14.39272672286572363111595285189991955121513456106186
+Difference from exact:  2.82999e-19
+Matching digits:        21
+
+Run #4 (shuffled):
+Calculated sum:         14.39272672286572363111595285189991955121513456106186
+Difference from exact:  2.82999e-19
+Matching digits:        21
+
+Run #5 (shuffled):
+Calculated sum:         14.39272672286572363111595285189991955121513456106186
+Difference from exact:  2.82999e-19
+Matching digits:        21
+
+
+=========================================
+
+=========================================
+Test: Test 9
+Описание: Проверка суммирования гармонического ряда 1/n² (ожидаемое значение ~π²/6).
+Входные данные (10000 элементов): 
+Результаты теста:
+Original Kahan sum:     1.64483407184805976975448815746716491048573516309261
+High precision sum:     1.64483407184805976980209067304135838805815482627573
+Absolute error:         4.76025e-20
+Matching digits:        20
+
+Original Klein sum:     1.64483407184805976975448815746716491048573516309261
+High precision sum:     1.64483407184805976980209067304135838805815482627573
+Absolute error:         4.76025e-20
+Matching digits:        20
+shuffle with Kahan Sum
+
+Run #1 (shuffled):
+Calculated sum:         1.64483407184805976975448815746716491048573516309261
+Difference from exact:  4.76025e-20
+Matching digits:        20
+
+Run #2 (shuffled):
+Calculated sum:         1.64483407184805976986290837471571535388648044317961
+Difference from exact:  6.08177e-20
+Matching digits:        21
+
+Run #3 (shuffled):
+Calculated sum:         1.64483407184805976975448815746716491048573516309261
+Difference from exact:  4.76025e-20
+Matching digits:        20
+
+Run #4 (shuffled):
+Calculated sum:         1.64483407184805976975448815746716491048573516309261
+Difference from exact:  4.76025e-20
+Matching digits:        20
+
+Run #5 (shuffled):
+Calculated sum:         1.64483407184805976986290837471571535388648044317961
+Difference from exact:  6.08177e-20
+Matching digits:        21
+
+shuffle with BabushkaKlein Sum
+
+Run #1 (shuffled):
+Calculated sum:         1.64483407184805976975448815746716491048573516309261
+Difference from exact:  4.76025e-20
+Matching digits:        20
+
+Run #2 (shuffled):
+Calculated sum:         1.64483407184805976975448815746716491048573516309261
+Difference from exact:  4.76025e-20
+Matching digits:        20
+
+Run #3 (shuffled):
+Calculated sum:         1.64483407184805976975448815746716491048573516309261
+Difference from exact:  4.76025e-20
+Matching digits:        20
+
+Run #4 (shuffled):
+Calculated sum:         1.64483407184805976975448815746716491048573516309261
+Difference from exact:  4.76025e-20
+Matching digits:        20
+
+Run #5 (shuffled):
+Calculated sum:         1.64483407184805976975448815746716491048573516309261
+Difference from exact:  4.76025e-20
+Matching digits:        20
+
+
+=========================================
+
+=========================================
+Test: Test 10
+Описание: Проверка компенсации машинного шума, когда большое число 'поглощает' маленькое.
+Входные данные (3 элементов): 
+Результаты теста:
+Original Kahan sum:     1.00000000000000000000000000000000000000000000000000
+High precision sum:     1.00000000000000000000000000000000000000000000000000
+Absolute error:         0
+Matching digits:        52
+
+Original Klein sum:     1.00000000000000000000000000000000000000000000000000
+High precision sum:     1.00000000000000000000000000000000000000000000000000
+Absolute error:         0
+Matching digits:        52
+shuffle with Kahan Sum
+
+Run #1 (shuffled):
+Calculated sum:         1.00000000000000000000000000000000000000000000000000
+Difference from exact:  0
+Matching digits:        52
+
+Run #2 (shuffled):
+Calculated sum:         1.00000000000000000000000000000000000000000000000000
+Difference from exact:  0
+Matching digits:        52
+
+Run #3 (shuffled):
+Calculated sum:         1.00000000000000000000000000000000000000000000000000
+Difference from exact:  0
+Matching digits:        52
+
+Run #4 (shuffled):
+Calculated sum:         1.00000000000000000000000000000000000000000000000000
+Difference from exact:  0
+Matching digits:        52
+
+Run #5 (shuffled):
+Calculated sum:         1.00000000000000000000000000000000000000000000000000
+Difference from exact:  0
+Matching digits:        52
+
+shuffle with BabushkaKlein Sum
+
+Run #1 (shuffled):
+Calculated sum:         1.00000000000000000000000000000000000000000000000000
+Difference from exact:  0
+Matching digits:        52
+
+Run #2 (shuffled):
+Calculated sum:         1.00000000000000000000000000000000000000000000000000
+Difference from exact:  0
+Matching digits:        52
+
+Run #3 (shuffled):
+Calculated sum:         1.00000000000000000000000000000000000000000000000000
+Difference from exact:  0
+Matching digits:        52
+
+Run #4 (shuffled):
+Calculated sum:         1.00000000000000000000000000000000000000000000000000
+Difference from exact:  0
+Matching digits:        52
+
+Run #5 (shuffled):
+Calculated sum:         1.00000000000000000000000000000000000000000000000000
+Difference from exact:  0
+Matching digits:        52
+
+
+=========================================
